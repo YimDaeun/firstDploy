@@ -1,0 +1,21 @@
+<div class="page-title">
+    <h1>Post. #<%= @showing_post.id %> </h1>
+</div>
+
+<div class="posts">
+    
+    <div class="title-box">
+        <label for="post-title"> Title</label>
+        <p class="title-name"> <%= @showing_post.title%></p>
+    </div>
+   
+    <div class="content-box">
+        <label for="post-content"> Content</label>
+        <p class="content-name" row=5> <%= @showing_post.content%></p>
+    </div>
+
+</div>
+
+<a class="btns"  href="/edit/<%= @showing_post.id%>"><button type="button" class="btn btn-success">Edit</button></a>
+<a  class="btns" href="/delete/<%= @showing_post.id%>"><button type="button" class="btn btn-warning">Delete</button></a>
+

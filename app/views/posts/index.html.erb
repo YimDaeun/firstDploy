@@ -1,0 +1,14 @@
+<div class="page-title">
+    <h1>Your Posts</h1>
+</div>
+
+<div class="posts">
+    <% @every_post.each do |p|%>
+    <div class="title-box">
+        <label for="post-title"> Post #<%= p.id %></label>
+        <a class="linker" href="/show/<%= p.id %>"><p class="title-name"> <%= p.title%></P></a><br>
+    </div>
+    <% end %>
+</div>
+
+<a class="btns" href="/new"><button type="button" class="btn btn-default">New</button></a>
